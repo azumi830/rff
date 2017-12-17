@@ -288,7 +288,7 @@ gulp.task('serve:dist', function () {
 
 // Build production files
 gulp.task('build', function (callback) {
-  runSequence('clean:build', ['html', 'styles', 'scripts', 'images', 'fonts', 'extras'], 'rev', callback);
+  runSequence('clean:build', ['html', 'styles', 'scripts', 'images', 'fonts', 'extras'], /*'rev',*/ callback);
 });
 
 // Push production files to "gh-pages" branch
