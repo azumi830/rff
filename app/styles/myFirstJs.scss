@@ -1,0 +1,25 @@
+@import "node_modules/node-normalize-scss/_normalize";
+
+.practiceBox {
+    margin: 16px;
+    color: #333;
+    &_sentence-q {
+        background: #efefef;
+        padding: 16px;
+        border-radius: 5px;
+        &:before {
+            content: 'Q.';
+            font-weight: bold;
+            margin-right: 8px;
+        }
+    }
+    &_sentence-a {
+        margin: 16px 0 0 16px;
+        &:before {
+            content: 'A.';
+            font-weight: bold;
+            margin-right: 8px;
+            color: tomato;
+        }
+    }
+}
